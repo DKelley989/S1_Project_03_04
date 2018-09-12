@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: Champange;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Dylan Kelley
+   Date: 9.10.18  
+   
+   Filename: lake_styles.css
+
+*/
+html {
+    background-color: rgb(90, 105, 135);
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 81, 0, 0.8);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: rgb(90, 105, 135);
+    color: rgba(255, 81, 0, 0.8);
+}
+
+section#rightcol a:hover {
+    color: rgba(255, 81, 0, 0.8);
+}
+
+section#rightcol nav {
+    padding: 20px 10px 10px 60px;
+}
+
+section#rightcol {
+    border: 3px solid rgba(255, 81, 0, 0.8);
+    background-color: rgba(168, 165, 165, 0.363);
+}
+
+blockquote {
+    padding: 0px 0px 0px 25px;
+}
