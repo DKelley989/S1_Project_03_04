@@ -1,5 +1,6 @@
 ﻿@charset "utf-8";
 
+/* These are the default fonts that came with the project files. */
 @font-face {
     font-family: Champange;
     src: url('cac_champagne.woff') format('woff'),
@@ -22,12 +23,15 @@
    Date: 9.10.18  
    
    Filename: lake_styles.css
-
 */
+
+/* Structure Styles */
+/* This style is used to set the background color to a blue-ish gray, or rgb(90, 105, 135); */
 html {
     background-color: rgb(90, 105, 135);
 }
 
+/* This stlye changes the font to "Playfair Display", spaces the letters out by 1 pixel, aligns the text to the center, and changes the font size to 25 pixels. */
 h1 {
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
@@ -37,6 +41,62 @@ h1 {
     /* text-decoration-color: rgb(90, 105, 135); */
 }
 
+/* This style changes all links to a text color of black, removes the underline from the hypertext, and makes the font bolded. */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* This style creates a 3 pixel wide border around the images. */
+img {
+    border: 3px solid rgba(255, 81, 0, 0.8);
+}
+
+/* This style aligns the footer to the center of the page, changes it's font to "Playfair Display", spaces the letters out by 1 pixel, spaces the words out by 2 pixels, changes the footer text to bold, and adds 20 pixels of padding on the top */
+footer {
+    text-align: center;
+    /* border: 3px solid rgba(255, 81, 0, 0.8); */
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 700;
+    padding-top: 20px;
+    /* background-color: rgba(168, 165, 165, 0.363) */
+}
+
+/* This style changes all paragraphs to the "Kaushan Script" font, spaces the letters out by 2 pixels and the words out by 3 pixels, and makes the font have a bold value of 600. */
+p {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 600;
+}
+
+/* This style aligns the text of the blockquote to the center. */
+blockquote {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+/* This style affects the emphasized text in the cite element to change the font to "Kaushan Script",  */
+em {
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 600;
+}
+
+cite {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header Styles */
+/* These stlyes are used to affect the header and navigation links at the top of the page, and are set to change the text/background color, font and font size/weight, padding, and to create borders around each link. These styles are also what change the text and border color when a link is hovered over. */
+header {
+    padding-top: 20px;
+}
+
 header nav a {
     color: rgb(90, 105, 135, .8);
     text-decoration: none;
@@ -44,7 +104,6 @@ header nav a {
     font-size: 20px;
     border: 2px solid rgba(255, 81, 0);
     font-family: 'Playfair Display', serif;
-
     /* font: style variant weight size/height family; */
 }
 
@@ -59,45 +118,12 @@ header nav a:hover {
     color: rgba(255, 81, 0, 0.8);
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-img {
-    border: 3px solid rgba(255, 81, 0, 0.8);
-}
-
-footer {
-    text-align: center;
-    /* border: 3px solid rgba(255, 81, 0, 0.8); */
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    font-weight: 700;
-}
-
-/* header a:hover {
-    background-color: rgb(90, 105, 135);
-    color: rgba(255, 81, 0, 0.8);
-} */
-
+/* Section Styles */
+/* These styles change the left and right sections of the page. The sections' background color, text color, font type and size, letter spacing, word spacing, and padding are changed, as well as a border added around each one. */
 section#leftcol {
     background-color: rgba(168, 165, 165, 0.363);
     padding: 0px 40px 0px 40px;
     border: 3px solid rgba(255, 81, 0, 0.8);
-}
-
-/* body {
-    background-color: rgb(90, 105, 135, 0.7);
-} */
-
-p {
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 600;
 }
 
 section#rightcol a:hover {
@@ -118,6 +144,11 @@ section#rightcol nav ul {
     list-style-type: none;
 }
 
+section#rightcol nav ul li {
+    text-align: center;
+    padding-right: 70px;
+}
+
 section#rightcol nav h2 {
     font-family: 'Playfair Display', serif;
 }
@@ -127,28 +158,16 @@ section#rightcol {
     background-color: rgba(168, 165, 165, 0.363);
 }
 
-blockquote {
-    padding: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-em {
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-weight: 600;
-}
-
-cite {
-    font-family: 'Playfair Display', serif;
-}
-
+/* Aside styles */
+/* These styles affect the two aside elements at the bottom of the page.  They change the font, text color, text decoration, text alignment, padding, and adds a border around each. */
 aside ul {
     font-family: 'Kaushan Script', cursive;
     font-weight: 600;
     letter-spacing: 1px;
     word-spacing: 2px;
     list-style-type: none;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
 }
 
 aside ul li.notes {
@@ -165,4 +184,17 @@ aside ul a:hover {
 
 aside {
     border: 3px solid rgba(255, 81, 0, 0.8);
+}
+
+aside h1 {
+    text-decoration: underline;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    padding: 0px 3px 0px 3px;
+    text-align: center;
 }
